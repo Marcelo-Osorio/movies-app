@@ -136,7 +136,6 @@ function renderMovie(movie, container, lazyLoad = false) {
   });
 
   const movieBtn = document.createElement("A");
-  movieBtn.href='#';
   movieBtn.classList.add("movie-btn");
   likedMoviesList()[movie.id] && movieBtn.classList.add("movie-btn--liked");
 
