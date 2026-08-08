@@ -149,7 +149,6 @@ function homePage() {
 }
 function categoriesPage() {
   console.log("categories");
-
   headerSection.classList.remove("header-container--long");
   headerSection.style.background = "";
   arrowBtn.classList.remove("inactive");
@@ -167,7 +166,8 @@ function categoriesPage() {
   bannerTitle.style.display = "none";
   const [_, categoryData] = location.hash.split("=");
   const [categoryId, categoryName] = categoryData.split("-");
-  headerCategoryTitle.innerHTML = categoryName;
+
+  headerCategoryTitle.innerHTML = decodeURIComponent(categoryName);
   getMoviesByCategory(categoryId);
   infiniteScroll = {
     functions: getPaginatedMoviesByCategory,

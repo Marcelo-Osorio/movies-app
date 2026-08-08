@@ -72,15 +72,16 @@ h3 {
 
 input {
   background-color: var(--orange-light-2);
-  color: var(--orange-medium-2);
+  color: var(--orange-medium-1);
   border: none;
   font-size: 18px;
   padding-left: 16px;
 }
 
 input::placeholder {
-  color: var(--orange-medium-1);
   font-family: var(--font-family-text);
+  font-weight: 600;
+  color: var(--orange-medium-2);
 }
 
 button,
@@ -149,13 +150,18 @@ footer {
 
 .movie-btn {
   position: absolute;
+  text-decoration: none;
   top: 5px;
   right: 10px;
-  height: 30px;
-  width: 30px;
-  border-radius: 30px;
-  padding: 0;
+  border-radius: 15px;
+  padding: 7px;
   margin: 0;
+  background-color: var(--orange-dark-1);
+  border: none;
+  color: var(--orange-light-2);
+  font-weight: var(--font-weight-text2);
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .movie-btn::before {
@@ -185,14 +191,12 @@ footer {
 }
 
 .header-container--long {
-  background-image: url("https://pics.filmaffinity.com/Deadpool-777527803-large.jpg");
-  background:
-    linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.35) 19.27%,
-      rgba(0, 0, 0, 0) 29.17%
-    ),
-    url(https://pics.filmaffinity.com/Deadpool-777527803-large.jpg);
+  background-image: url("");
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35) 19.27%,
+    rgba(0, 0, 0, 0) 29.17%
+  );
   background-size: cover !important;
   height: 480px;
   position: fixed;
@@ -262,6 +266,7 @@ footer {
   width: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  background-color: var(--orange-dark-2);
 }
 .header-searchForm button {
   width: 56px;

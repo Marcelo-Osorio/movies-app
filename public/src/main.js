@@ -135,7 +135,8 @@ function renderMovie(movie, container, lazyLoad = false) {
     movieImg.setAttribute("src", "./img/error404.png");
   });
 
-  const movieBtn = document.createElement("BUTTON");
+  const movieBtn = document.createElement("A");
+  movieBtn.href='#';
   movieBtn.classList.add("movie-btn");
   likedMoviesList()[movie.id] && movieBtn.classList.add("movie-btn--liked");
 

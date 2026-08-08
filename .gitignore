@@ -146,3 +146,4 @@ dist
 **/secrets.js
 .netlify/
 .atl
+deno.lock
